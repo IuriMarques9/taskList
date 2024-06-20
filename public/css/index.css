@@ -1,0 +1,13 @@
+/*Reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border:none;
+    outline: none;
+}
+body{
+    background: radial-gradient(ellipse at center, rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%);
+    background-repeat: no-repeat;
+    height: 100vh;
+}

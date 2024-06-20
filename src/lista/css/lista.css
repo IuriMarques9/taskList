@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.corpo{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    padding: 50px 0px;
+}
+
+#container{
+    width: 70%;
+}
+/*Formulario*/
+.form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.form input{
+    width: 80%;
+    height: 50px;
+    margin: 30px 0px;
+    padding-left: 10px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    background: linear-gradient(to bottom, rgba(5,3,38,1) 0%,rgba(22,21,40,1) 100%);    
+    color: white;
+    border: 1px solid rgba(5,3,38,1);
+}
+.form input:hover{
+    border: 1px solid rgb(37, 36, 68);
+}
+.form input:focus{
+    border: 1px solid rgb(37, 36, 68);
+}
+.form button{
+    width: 20%;
+    margin: 30px 0px;
+    cursor: pointer;
+    background: linear-gradient(to bottom, rgba(5,3,38,1) 0%,rgba(22,21,40,1) 100%);    
+    color: white;
+    border: 1px solid rgba(5,3,38,1);
+    font-size: 0.8em;
+}
+.form button:hover{
+    opacity: 0.8;
+    border: 1px solid rgb(37, 36, 68);
+}
+.form button:active{
+    opacity: 0.5;
+}
+
+/*Tarefas*/
+#tarefas{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#tarefas .tarefa{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    height: 40px;
+    align-items: center;
+    margin: 2.5px 0px;
+}
+#tarefas .tarefa.check{
+    cursor: pointer;
+    background: linear-gradient(to bottom, rgba(5,3,38,1) 0%,rgba(22,21,40,1) 100%);    
+    color: white;
+    border: 1px solid rgb(37, 36, 68);
+    font-size: 0.8em;
+    padding-left: 13px;
+    filter: brightness(0.6);
+}
+#tarefas .tarefa.notCheck{
+    cursor: pointer;
+    background: linear-gradient(to bottom, rgba(5,3,38,1) 0%,rgba(22,21,40,1) 100%);    
+    color: white;
+    border: 1px solid rgb(37, 36, 68);
+    font-size: 0.8em;
+    padding-left: 13px;
+}
+#tarefas .tarefa.check .apagar{
+    height: 40px;
+    width: 20%;    
+    font-size: 0.9em;
+    background: none;
+    color: white;
+    border: 1px solid rgb(37, 36, 68);
+}
+#tarefas .tarefa.notCheck .apagar{
+    height: 40px;
+    width: 20%;
+    font-size: 0.9em;
+    background: none;
+    color: white;
+    border: 1px solid rgb(37, 36, 68);
+}
+#tarefas .tarefa.check .apagar:hover{
+    height: 40px;
+    width: 20%;    
+    font-size: 0.9em;
+    background: none;
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#tarefas .tarefa.notCheck .apagar:hover{
+    height: 40px;
+    width: 20%;
+    font-size: 0.9em;
+    background: none;
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#tarefas .tarefa.check span{
+    text-decoration: line-through;
+    width: 80%;
+    display: block;
+    line-height: 40px;
+}
+#tarefas .tarefa.notCheck span{
+    width: 80%;
+    display: block;
+    line-height: 40px;
+}
+#tarefa button{
+    cursor: pointer;
+}
+
+.corpo #apagarTudo{
+    cursor: pointer;
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    background: none;
+    border: 1px solid red;
+    color: red;
+    background-color: rgba(0, 0, 0, 0.212);
+}
+
+@media screen and (min-width:800px){
+    #container {
+        width: 700px;
+    }
+}
